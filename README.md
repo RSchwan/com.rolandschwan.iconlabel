@@ -12,7 +12,7 @@ The widget provides a simple [FontAwesome](http://fortawesome.github.io/Font-Awe
 * Refer to icons by their [name](http://fortawesome.github.io/Font-Awesome/icons/).
 * Label can be mixed with icons and normal text.
 * It can be styled like a normal label.
-* Script to automatically update the font file and cheatsheet.
+* Script to automatically download the font file and generate the cheatsheet.
 
 ## Quick Start [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/com.rolandschwan.iconlabel)
 
@@ -28,7 +28,7 @@ The widget provides a simple [FontAwesome](http://fortawesome.github.io/Font-Awe
         }
         ```
 
-* (optional) Run the `update.py` script to update the font file and generate an updated cheatsheet file.
+* Run the `build.py` script to download the font file into the fonts folder and generate an updated cheatsheet file.
 * Create an instance of the widget in a controller and add it to a window or view:
 
 	```javascript
@@ -88,7 +88,8 @@ Style it like a normal label.
 To generate a icon just write the [name](http://fortawesome.github.io/Font-Awesome/icons/) of the icon and it will automatically be generated.
 
 ## Changelog
-* v1.0.0: Initial version
+* v1.1.0: Support for events.
+* v1.0.0: Initial version.
 
 ## License
 
