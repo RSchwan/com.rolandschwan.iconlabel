@@ -4,12 +4,9 @@ delete args.id;
 delete args.__parentSymbol;
 delete args.children;
 
-var charcode = require(WPATH('charcode')).charcode;
+$.iconLabel.applyProperties(args);
 
-_.each(args, function (value, key)
-{
-    $.iconLabel[key] = value;
-});
+var charcode = require(WPATH('charcode')).charcode;
 
 var font = args.font || {};
 font.fontFamily = 'FontAwesome';
@@ -26,3 +23,15 @@ text = text.replace(/fa-[a-z-]+/g, function (match)
     return match;
 });
 $.iconLabel.text = text;
+
+exports.on = $.iconLabel.addEventListener;
+exports.off = $.iconLabel.removeEventListener;
+
+exports.bind = $.iconLabel.addEventListener;
+exports.unbind = $.iconLabel.removeEventListener;
+
+exports.addEventListener = $.iconLabel.addEventListener;
+exports.removeEventListener = $.iconLabel.removeEventListener;
+
+exports.trigger = $.iconLabel.fireEvent;
+exports.fireEvent = $.iconLabel.fireEvent;
