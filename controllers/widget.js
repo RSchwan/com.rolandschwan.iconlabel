@@ -24,8 +24,12 @@ text = text.replace(/fa-[a-z-]+/g, function (match)
 });
 $.iconLabel.text = text;
 
-exports.on = $.iconLabel.addEventListener;
-exports.off = $.iconLabel.removeEventListener;
+// workaround for android
+exports.on = function(name, cb) { return $.iconLabel.addEventListener(name, cb); };
+exports.off = function(name, cb) { return $.iconLabel.removeEventListener(name, cb); };
+exports._hasListenersForEventType = function(name, flag) {
+    return $.iconLabel._hasListenersForEventType(name, flag);
+};
 
 exports.bind = $.iconLabel.addEventListener;
 exports.unbind = $.iconLabel.removeEventListener;
