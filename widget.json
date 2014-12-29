@@ -3,7 +3,7 @@
 	"name": "com.rolandschwan.iconlabel",
 	"description" : "Basic FontAwesome support for labels.",
 	"author": "Roland Schwan",
-	"version": "1.0.0",
+	"version": "1.1.2",
 	"copyright":"Copyright (c) 2015",
 	"license":"Apache License, Version 2.0",
 	"min-alloy-version": "1.0",
