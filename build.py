@@ -5,7 +5,7 @@ baseUrl = 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/'
 # Download font file directly from github
 if not os.path.exists('assets/fonts'):
     os.makedirs('assets/fonts')
-urllib.urlretrieve(baseUrl + 'fonts/FontAwesome.otf', 'assets/fonts/FontAwesome.otf')
+urllib.urlretrieve(baseUrl + 'fonts/FontAwesome.otf', '../../assets/fonts/FontAwesome.otf')
 
 # Download less file directly from github and generate charcode file
 less = urllib2.urlopen(baseUrl + 'less/variables.less').read()
