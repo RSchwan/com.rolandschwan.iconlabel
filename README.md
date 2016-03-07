@@ -88,6 +88,7 @@ Style it like a normal label.
 To generate a icon just write the [name](http://fortawesome.github.io/Font-Awesome/icons/) of the icon and it will automatically be generated.
 
 ## Changelog
+* v1.1.3: Classes access fix for Android. (#3)
 * v1.1.2: Widget version update.
 * v1.1.1: Fix for android.
 * v1.1.0: Support for events.
