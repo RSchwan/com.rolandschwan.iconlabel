@@ -24,6 +24,12 @@ text = text.replace(/fa-[a-z-]+/g, function (match)
 });
 $.iconLabel.text = text;
 
+// classes fix for Android
+if (OS_ANDROID) {
+    var classes = args.classes || [];
+    $.iconLabel.classes = classes;
+}
+
 // workaround for android
 exports.on = function(name, cb) { return $.iconLabel.addEventListener(name, cb); };
 exports.off = function(name, cb) { return $.iconLabel.removeEventListener(name, cb); };
